@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibreLabs — Un pequeño laboratorio construyendo software útil y libre</title>
+    <meta
+      name="description"
+      content="LibreLabs es un pequeño laboratorio de software que crea herramientas Open Source y servicios Cloud alrededor de ellas. Explorá sus proyectos, entre ellos LibreDrop y LibreDrop Cloud."
+    />
+    <meta name="theme-color" content="#0b2f2b" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LibreLabs" />
+    <meta property="og:title" content="LibreLabs — Software útil y libre" />
+    <meta
+      property="og:description"
+      content="Un pequeño laboratorio construyendo software útil y libre. Proyectos Open Source y servicios Cloud administrados alrededor de ellos."
+    />
+    <meta property="og:image" content="images/librelabs.jpg" />
+    <meta property="og:image:width" content="1365" />
+    <meta property="og:image:height" content="768" />
+    <meta property="og:locale" content="es_GT" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LibreLabs — Software útil y libre" />
+    <meta
+      name="twitter:description"
+      content="Un pequeño laboratorio construyendo software útil y libre: proyectos Open Source y servicios Cloud administrados alrededor de ellos."
+    />
+    <meta name="twitter:image" content="images/librelabs.jpg" />
+
+    <!-- Favicon (images/librelabs_favicon.png, 500x500) -->
+    <link rel="icon" type="image/png" sizes="500x500" href="images/librelabs_favicon.png" />
+    <link rel="icon" type="image/png" sizes="180x180" href="images/librelabs_favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/librelabs_favicon.png" />
+    <link rel="apple-touch-icon" href="images/librelabs_favicon.png" />
+
+    <!--
+      Canonical: cuando conozcas el dominio de producción de esta landing,
+      añade aquí el <link rel="canonical" href="https://TUDOMINIO/..." /> correspondiente.
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <noscript>
+      <style>.reveal { opacity: 1 !important; transform: none !important; }</style>
+    </noscript>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="nav" id="nav">
+      <nav class="nav-inner" aria-label="Principal">
+        <a class="brand" href="#inicio" aria-label="LibreLabs, inicio">
+          <img class="brand-mark" src="images/librelabs_favicon.png" alt="" width="30" height="30" />
+          <span class="brand-name">LibreLabs</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Abrir menú de navegación"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="menu">
+          <a href="#que-hacemos">Qué hacemos</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#libredrop">LibreDrop</a>
+          <a href="#cloud">Cloud</a>
+          <a href="#open-source">Open Source</a>
+          <a class="btn btn-ghost" href="https://github.com/LibreLabs502" target="_blank" rel="noopener noreferrer">
+            Ver código
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <!-- ================= HERO ================= -->
+      <section class="hero" id="inicio">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="wrap hero-center reveal">
+          <img
+            class="hero-logo"
+            src="images/librelabs_favicon.png"
+            alt="Logotipo de LibreLabs"
+            width="112"
+            height="112"
+            loading="eager"
+            fetchpriority="high"
+          />
+          <p class="eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            Laboratorio independiente · Open Source · Hecho en Guatemala
+          </p>
+          <h1>
+            Construimos software libre
+            <span class="line">para problemas <em>reales</em>.</span>
+          </h1>
+          <p class="lede">
+            LibreLabs es un pequeño laboratorio de software que crea herramientas
+            Open Source y servicios Cloud alrededor de ellas. Sin humo, sin planes
+            complicados: software útil, sencillo y libre.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#proyectos">Explorá nuestros proyectos</a>
+            <a class="btn btn-soft" href="#que-es">Quiénes somos</a>
+          </div>
+          <p class="hero-quote">
+            «Un pequeño laboratorio construyendo software <b>útil y libre</b>.»
+          </p>
+          <p class="hero-note">
+            Proyecto principal: <a href="#libredrop">LibreDrop</a> · tiendas online simples ·
+            AGPLv3 · hecho con personas comunes en mente
+          </p>
+        </div>
+        <div class="hero-strip" aria-hidden="true"></div>
+      </section>
+
+      <!-- ================= QUÉ ES LIBRELABS ================= -->
+      <section class="section" id="que-es">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="kicker">Qué es LibreLabs</p>
+            <h2>Un pequeño laboratorio. No una corporación gigante.</h2>
+            <p class="section-sub">
+              LibreLabs construye herramientas tecnológicas enfocadas en el Open Source,
+              la accesibilidad, la autonomía y los pequeños negocios. Tecnología sencilla,
+              software útil y una comunidad alrededor.
+            </p>
+          </div>
+
+          <div class="card-grid three">
+            <article class="foundation-card reveal">
+              <span class="foundation-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+              </span>
+              <h3>Misión</h3>
+              <p>
+                Crear software útil y accesible que devuelva el control de la tecnología
+                a las personas que la utilizan.
+              </p>
+            </article>
+
+            <article class="foundation-card reveal reveal-delay">
+              <span class="foundation-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              </span>
+              <h3>Visión</h3>
+              <p>
+                Construir un ecosistema de herramientas abiertas que permita a personas,
+                desarrolladores y pequeños negocios usar tecnología sin depender de
+                plataformas cerradas.
+              </p>
+            </article>
+
+            <article class="foundation-card reveal reveal-delay2">
+              <span class="foundation-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a4 4 0 0 0-4 4c0 1.5.8 2.9 2 3.6V13a2 2 0 0 0 4 0v-2.4A4 4 0 0 0 16 7a4 4 0 0 0-4-4Z"/><path d="M8 17h8"/><path d="M8.5 20h7"/></svg>
+              </span>
+              <h3>Filosofía</h3>
+              <p>
+                Open Source, simplicidad, autonomía y utilidad. Tecnología sencilla que
+                entiende cualquiera, pensada para gente común.
+              </p>
+            </article>
+          </div>
+
+          <aside class="lab-note reveal">
+            <span class="lab-note-mark" aria-hidden="true">·</span>
+            <p>
+              Como dice nuestra página de GitHub: <b>«un pequeño negocio para todos. Software,
+              proyectos y herramientas libres»</b>.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ================= QUÉ HACEMOS ================= -->
+      <section class="section section-paper" id="que-hacemos">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="kicker">Qué hacemos</p>
+            <h2>Dos áreas, una misma búsqueda</h2>
+            <p class="section-sub">
+              En LibreLabs construimos software abierto y, cuando tiene sentido, ofrecemos
+              servicios Cloud administrados alrededor de él. La diferencia es clara.
+            </p>
+          </div>
+
+          <div class="card-grid two">
+            <article class="work-card work-open reveal">
+              <span class="work-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </span>
+              <span class="tag">Proyectos Open Source</span>
+              <h3>Construimos software libre</h3>
+              <p>
+                Proyectos de software que podés estudiar, modificar y utilizar bajo sus
+                respectivas licencias. El código está abierto, la transparencia es parte
+                del producto.
+              </p>
+              <a class="link-arrow" href="#proyectos">
+                Ver proyectos
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <article class="work-card work-cloud reveal reveal-delay">
+              <span class="work-icon work-icon-cloud" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.6-1.5A4.5 4.5 0 0 0 6.5 19h11Z"/></svg>
+              </span>
+              <span class="tag tag-cloud">Servicios Cloud</span>
+              <h3>Servicios administrados</h3>
+              <p>
+                Para quienes prefieren usar el software sin encargarse de toda la
+                infraestructura, ofrecemos servicios Cloud administrados alrededor de
+                nuestros proyectos.
+              </p>
+              <a class="link-arrow link-arrow-cloud" href="#cloud">
+                Conocé LibreLabs Cloud
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROYECTOS ================= -->
+      <section class="section" id="proyectos">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="kicker">Proyectos</p>
+            <h2>Explorá nuestros proyectos</h2>
+            <p class="section-sub">
+              Hoy el proyecto principal de LibreLabs es <b>LibreDrop</b>. Lento pero
+              constante: seguimos construyendo más herramientas abiertas.
+            </p>
+          </div>
+
+          <div class="project-row">
+            <article class="project-card reveal">
+              <div class="project-top">
+                <span class="project-logo" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>
+                </span>
+                <div>
+                  <span class="tag">Proyecto principal</span>
+                  <h3>LibreDrop</h3>
+                </div>
+                <span class="lic">AGPLv3</span>
+              </div>
+              <p class="project-desc">
+                Plataforma Open Source para crear tiendas online simples: publicá tus
+                productos y recibí pedidos por WhatsApp, sin comisiones.
+              </p>
+              <ul class="mini-list">
+                <li>Catálogo de categorías y productos por tienda</li>
+                <li>Multi-tenant: datos aislados por tienda</li>
+                <li>API REST con JWT · self-hosting</li>
+              </ul>
+              <div class="project-actions">
+                <!-- ENLACE TEMPORAL: reemplazá /libredrop por el dominio real de la landing de LibreDrop -->
+                <a class="btn btn-primary" href="/libredrop">Explorar LibreDrop</a>
+                <a class="btn btn-ghost" href="https://github.com/LibreLabs502/LibreDrop" target="_blank" rel="noopener noreferrer">
+                  Ver código
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card project-card-soon reveal reveal-delay">
+              <div class="project-top">
+                <span class="project-logo project-logo-dim" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+                </span>
+                <div>
+                  <span class="tag tag-dim">En camino</span>
+                  <h3>Próximos proyectos</h3>
+                </div>
+              </div>
+              <p class="project-desc">
+                Seguimos trabajando en herramientas útiles para pequeños negocios y para
+                la comunidad. Cuando haya algo nuevo, va a vivir acá, abierto y público.
+              </p>
+              <a class="link-arrow" href="#futuro">
+                Hacia dónde va LibreLabs
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= LIBREDROP (destacado) ================= -->
+      <section class="section section-tint" id="libredrop">
+        <div class="wrap">
+          <div class="split split-flip">
+            <div class="reveal">
+              <p class="kicker">LibreDrop</p>
+              <h2>Una plataforma Open Source para crear tiendas online simples</h2>
+              <p class="section-sub">
+                LibreDrop es el proyecto principal de LibreLabs: una plataforma Open Source
+                (AGPLv3), hecha en Guatemala, con un objetivo claro — que vender online sea
+                simple y sin comisiones.
+              </p>
+              <ul class="feat-list">
+                <li>
+                  <b>Productos y categorías.</b> CRUD completo por tienda: nombre,
+                  descripción, precio e imagen. Backend de v1 terminado.
+                </li>
+                <li>
+                  <b>Pedidos por WhatsApp.</b> Tus clientes escriben directo al número de tu
+                  tienda. Sin pasarelas de pago ni comisiones por venta.
+                </li>
+                <li>
+                  <b>Multi-tenant real.</b> Cada tienda es un tenant con esquema propio en
+                  PostgreSQL (django-tenants): tus datos quedan aislados de los demás.
+                </li>
+                <li>
+                  <b>Registro en un solo paso.</b> Al crear tu usuario se genera tu tienda,
+                  su esquema y su dominio en una sola transacción.
+                </li>
+                <li>
+                  <b>API REST con JWT.</b> Autenticación segura; el catálogo es público y la
+                  administración, privada.
+                </li>
+                <li>
+                  <b>Control de datos y self-hosting.</b> Podés ejecutarlo en tu propia
+                  infraestructura y conservar el control.
+                </li>
+              </ul>
+              <p class="honesty-note">
+                Estado real del proyecto: el backend de v1 está terminado. Clientes, pedidos
+                y seguimiento de pagos se están desarrollando para futuras versiones; en el
+                MVP el cobro se gestiona por fuera de la plataforma, vía WhatsApp.
+              </p>
+            </div>
+
+            <div class="browser reveal reveal-delay">
+              <div class="browser-bar">
+                <span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="url">mitienda.libredrop.com</span>
+              </div>
+              <img
+                src="images/libredrop.jpg"
+                alt="Tienda creada con LibreDrop mostrando su catálogo de productos"
+                width="1407"
+                height="768"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="project-actions project-actions-wide reveal">
+            <div class="project-actions-copy">
+              <b>Dos formas de conocer LibreDrop</b>
+              <span>La landing para conocer el producto · GitHub para conocer el código y contribuir.</span>
+            </div>
+            <div class="project-actions-btns">
+              <!-- ENLACE TEMPORAL: reemplazá /libredrop por el dominio real de la landing de LibreDrop -->
+              <a class="btn btn-primary" href="/libredrop">Explorar LibreDrop</a>
+              <a class="btn btn-ghost" href="https://github.com/LibreLabs502/LibreDrop" target="_blank" rel="noopener noreferrer">
+                Ver código
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= LIBREDROP CLOUD (Q100/mes) ================= -->
+      <section class="section cloud-section" id="libredrop-cloud">
+        <div class="cloud-bg" aria-hidden="true"></div>
+        <div class="wrap cloud-grid">
+          <div class="cloud-copy reveal">
+            <p class="kicker kicker-light">
+              LibreDrop Cloud
+            </p>
+            <h2>¿Querés usar LibreDrop sin administrar nada?</h2>
+            <p class="cloud-lede">
+              LibreDrop Cloud es una versión administrada de LibreDrop: el mismo software,
+              ya instalado, con la infraestructura y el mantenimiento a cargo de LibreLabs.
+              Ideal para personas y negocios que quieren vender sin encargarse del servidor.
+            </p>
+            <ul class="cloud-benefits">
+              <li>
+                <span class="check" aria-hidden="true">✓</span>
+                <span><b>El mismo LibreDrop.</b> Software Open Source, AGPLv3.</span>
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">✓</span>
+                <span><b>Infraestructura administrada.</b> No te preocupás por el servidor.</span>
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">✓</span>
+                <span><b>Instalación y mantenimiento</b> a cargo de LibreLabs.</span>
+              </li>
+            </ul>
+            <div class="cloud-price">
+              <span class="cloud-price-amount">Q100<small>/mes</small></span>
+              <span class="cloud-price-label">Un único precio. Servicio de LibreLabs.</span>
+            </div>
+            <p class="cloud-note">
+              Los detalles operativos del servicio (límites, almacenamiento, soporte) serán
+              definidos y publicados oficialmente por LibreLabs.
+            </p>
+          </div>
+          <figure class="cloud-figure reveal reveal-delay">
+            <img
+              src="images/libredrop_cloud.jpg"
+              alt="Tienda online lista para vender con LibreDrop Cloud"
+              width="1407"
+              height="768"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ================= LIBRELABS CLOUD (concepto) ================= -->
+      <section class="section" id="cloud">
+        <div class="wrap">
+          <div class="section-head center reveal">
+            <p class="kicker">LibreLabs Cloud</p>
+            <h2>Una idea más amplia que un solo producto</h2>
+            <p class="section-sub">
+              LibreLabs construye proyectos Open Source y, cuando tiene sentido, ofrece
+              servicios Cloud administrados alrededor de ellos. LibreDrop Cloud es el primer
+              caso; el modelo puede extenderse a otros proyectos del ecosistema.
+            </p>
+          </div>
+
+          <div class="lab-map reveal">
+            <div class="map-root">LibreLabs</div>
+            <div class="map-vline" aria-hidden="true"></div>
+            <div class="map-hline-wrap" aria-hidden="true"></div>
+            <div class="map-branches">
+              <div class="map-col">
+                <span class="map-vline" aria-hidden="true"></span>
+                <div class="map-node map-node-open">Open Source</div>
+                <div class="map-child">LibreDrop</div>
+                <a class="map-child dim" href="#proyectos">Próximos proyectos</a>
+              </div>
+              <div class="map-col">
+                <span class="map-vline" aria-hidden="true"></span>
+                <div class="map-node map-node-cloud">Cloud</div>
+                <a class="map-child" href="#libredrop-cloud">LibreDrop Cloud</a>
+                <span class="map-child dim">Otros servicios, cuando tenga sentido</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cloud-concept-grid">
+            <figure class="cloud-figure cloud-figure-inline reveal reveal-delay">
+              <img
+                src="images/librelabs_cloud.jpg"
+                alt="Captura del sitio de LibreLabs Cloud"
+                width="1408"
+                height="768"
+                loading="lazy"
+              />
+            </figure>
+            <div class="reveal">
+              <h3>La misma idea, repetida con honestidad</h3>
+              <p>
+                Cada proyecto Open Source puede vivirse de dos formas: vos lo administrás, o
+                LibreLabs lo administra por vos en la nube. La idea no reemplaza al software
+                libre: lo complementa.
+              </p>
+              <p>
+                LibreLabs Cloud es la capa de servicios administrados de LibreLabs, pensada
+                para crecer junto a los proyectos del laboratorio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ¿CÓMO AYUDA LIBRELABS CLOUD? ================= -->
+      <section class="section section-paper" id="como-ayuda">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="kicker">Cómo funciona</p>
+            <h2>Vos usás el software. Nosotros cuidamos la infraestructura.</h2>
+            <p class="section-sub">
+              Así se ve el modelo de LibreLabs Cloud: cuando ofrecemos un servicio
+              administrado alrededor de un proyecto, hay una división clara del trabajo.
+            </p>
+          </div>
+
+          <div class="how-grid">
+            <div class="how-card reveal">
+              <span class="how-num" aria-hidden="true">1</span>
+              <h3>Vos utilizás el software</h3>
+              <p>
+                Definís tu catálogo, cargás tus productos y les vendés a tus clientes. El
+                software es el mismo proyecto Open Source.
+              </p>
+            </div>
+            <div class="how-card reveal reveal-delay">
+              <span class="how-num" aria-hidden="true">2</span>
+              <h3>LibreLabs se encarga de la infraestructura</h3>
+              <p>
+                Según el servicio, eso puede incluir:
+              </p>
+              <ul class="how-list">
+                <li>Infraestructura</li>
+                <li>Despliegue</li>
+                <li>Configuración</li>
+                <li>Mantenimiento</li>
+                <li>Administración del servicio</li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="lab-note reveal">
+            <span class="lab-note-mark" aria-hidden="true">·</span>
+            <p>
+              No todos los servicios están disponibles para todos los productos: el Cloud
+              se ofrece <b>cuando tiene sentido</b>. Hoy el caso concreto es LibreDrop Cloud,
+              a Q100/mes.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ================= POR QUÉ EXISTE CLOUD ================= -->
+      <section class="section section-dark" id="por-que-cloud">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="kicker kicker-light">Open Source y Cloud</p>
+            <h2>No son ideas opuestas. Son dos caminos.</h2>
+            <p class="section-sub dark-sub">
+              A veces parece que el Open Source obliga a administrar un servidor. No es así.
+              El software puede ser libre y, además, estar administrado por alguien más.
+            </p>
+          </div>
+
+          <div class="card-grid two">
+            <article class="path-card reveal">
+              <span class="path-mark path-mark-open" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </span>
+              <h3>Quieren control total</h3>
+              <p>
+                Algunas personas quieren administrar su propia instancia: estudiar el código,
+                modificarlo y ejecutarlo donde quieran. Para ellas está el proyecto Open
+                Source y el self-hosting.
+              </p>
+            </article>
+            <article class="path-card reveal reveal-delay">
+              <span class="path-mark path-mark-cloud" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.6-1.5A4.5 4.5 0 0 0 6.5 19h11Z"/></svg>
+              </span>
+              <h3>Prefieren una experiencia administrada</h3>
+              <p>
+                Otras personas prefieren usar el mismo software sin tener que administrar
+                servidores. Para ellas está la versión administrada, como LibreDrop Cloud.
+              </p>
+            </article>
+          </div>
+
+          <div class="wrap cta-band">
+            <p class="cta-band-text reveal">
+              La conclusión: <b>Open Source no significa que todos tengan que administrar un
+              servidor</b>. Significa que nadie queda encerrado.
+            </p>
+            <a class="btn btn-primary reveal reveal-delay" href="https://github.com/LibreLabs502/LibreDrop" target="_blank" rel="noopener noreferrer">
+              Ver el código
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= OPEN SOURCE ================= -->
+      <section class="section section-tint" id="open-source">
+        <div class="wrap split">
+          <div class="reveal">
+            <p class="kicker">Open Source</p>
+            <h2>Hecho para ser libre, transparente y propio</h2>
+            <p class="section-sub">
+              Creemos en el software libre: que podés estudiarlo, modificarlo, utilizarlo y
+              contribuir. La transparencia no es un extra, es parte de cómo trabajamos.
+            </p>
+            <ul class="freedoms">
+              <li>
+                <span class="freedom-mark" aria-hidden="true">✓</span>
+                <span><b>Transparencia.</b> Cualquiera puede ver qué hace el código y cómo se
+                manejan los datos.</span>
+              </li>
+              <li>
+                <span class="freedom-mark" aria-hidden="true">✓</span>
+                <span><b>Estudiarlo y modificarlo.</b> El código está abierto para aprender y
+                adaptarlo.</span>
+              </li>
+              <li>
+                <span class="freedom-mark" aria-hidden="true">✓</span>
+                <span><b>Utilizarlo y contribuir.</b> Usá el software, reportá errores, proponé
+                ideas, sumá tu código.</span>
+              </li>
+              <li>
+                <span class="freedom-mark" aria-hidden="true">✓</span>
+                <span><b>Self-hosting cuando corresponde.</b> Podés ejecutar los proyectos en tu
+                propia infraestructura.</span>
+              </li>
+              <li>
+                <span class="freedom-mark" aria-hidden="true">✓</span>
+                <span><b>Control sobre tus datos.</b> Tus datos no se quedan encerrados en un
+                sistema propietario.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="reveal reveal-delay">
+            <div class="license-card">
+              <div class="license-top">
+                <span class="license-badge" aria-hidden="true">AGPLv3</span>
+                <span class="license-name">Cada proyecto tiene su licencia</span>
+              </div>
+              <p>
+                No todos los proyectos de LibreLabs usan la misma licencia: cada uno define
+                la suya. LibreDrop, por ejemplo, se publica bajo la
+                <b>GNU Affero General Public License v3</b>:
+              </p>
+              <ul>
+                <li>Podés usarla, estudiarla y modificarla libremente.</li>
+                <li>
+                  Si ofrecés el software como servicio, el código — incluidas tus
+                  modificaciones — debe seguir disponible (copyleft).
+                </li>
+                <li>Lo que es libre, se mantiene libre.</li>
+              </ul>
+              <a class="btn btn-primary" href="https://github.com/LibreLabs502/LibreDrop/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
+                Leer la licencia de LibreDrop
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FUTURO ================= -->
+      <section class="section" id="futuro">
+        <div class="wrap">
+          <div class="section-head center reveal">
+            <p class="kicker">Futuro</p>
+            <h2>Hacia dónde va LibreLabs</h2>
+            <p class="section-sub">
+              El laboratorio recién empieza. No prometemos fechas ni productos mágicos:
+              esta es la dirección general en la que avanzamos.
+            </p>
+          </div>
+
+          <ul class="futuro-list reveal">
+            <li>
+              <span class="futuro-num" aria-hidden="true">01</span>
+              <div>
+                <h3>Nuevos proyectos Open Source</h3>
+                <p>Publicar más herramientas abiertas, la una a la vez, con calma y atención.</p>
+              </div>
+            </li>
+            <li class="reveal-delay">
+              <span class="futuro-num" aria-hidden="true">02</span>
+              <div>
+                <h3>Mejorar los proyectos existentes</h3>
+                <p>Terminar lo empezado: cerrar el roadmap de LibreDrop y seguir depurando el código.</p>
+              </div>
+            </li>
+            <li class="reveal-delay">
+              <span class="futuro-num" aria-hidden="true">03</span>
+              <div>
+                <h3>Herramientas para pequeños negocios</h3>
+                <p>Software sencillo que resuelva problemas reales de personas que venden y emprenden.</p>
+              </div>
+            </li>
+            <li class="reveal-delay">
+              <span class="futuro-num" aria-hidden="true">04</span>
+              <div>
+                <h3>Servicios Cloud alrededor de los proyectos</h3>
+                <p>Ofrecer la experiencia administrada, como LibreDrop Cloud, siempre que tenga sentido.</p>
+              </div>
+            </li>
+            <li class="reveal-delay">
+              <span class="futuro-num" aria-hidden="true">05</span>
+              <div>
+                <h3>Comunidad y colaboración</h3>
+                <p>Que haya más gente usando, reportando, enseñando y contribuyendo a lo que construimos.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= CTA FINAL ================= -->
+      <section class="cta-final" id="cta">
+        <div class="wrap cta-inner reveal">
+          <p class="eyebrow cta-eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            LibreLabs · Open Source + Cloud
+          </p>
+          <h2>Conocé qué estamos construyendo</h2>
+          <p>
+            LibreDrop es Open Source y está listo para que lo uses. Si preferís no
+            administrar nada, LibreDrop Cloud te lo deja todo listo por <b>Q100/mes</b>.
+          </p>
+          <div class="hero-actions">
+            <!-- ENLACE TEMPORAL: reemplazá /libredrop por el dominio real de la landing de LibreDrop -->
+            <a class="btn btn-primary" href="/libredrop">Explorar LibreDrop</a>
+            <a class="btn btn-soft" href="https://github.com/LibreLabs502" target="_blank" rel="noopener noreferrer">
+              Ver código en GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <div class="footer-brand">
+          <span class="brand-name">LibreLabs</span>
+          <p>Un pequeño laboratorio construyendo software útil y libre: proyectos Open Source y servicios Cloud alrededor de ellos. Hecho en Guatemala.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Enlaces del pie">
+          <div>
+            <h3>Proyectos</h3>
+            <!-- ENLACE TEMPORAL: reemplazá /libredrop por el dominio real de la landing de LibreDrop -->
+            <a href="/libredrop">LibreDrop (landing)</a>
+            <a href="https://github.com/LibreLabs502/LibreDrop" target="_blank" rel="noopener noreferrer">LibreDrop en GitHub</a>
+            <a href="https://github.com/LibreLabs502/LibreDrop/blob/main/docs/VERSIONS.md" target="_blank" rel="noopener noreferrer">VERSIONS.md</a>
+            <a href="https://github.com/LibreLabs502/LibreDrop/blob/main/docs/CONTRIB.md" target="_blank" rel="noopener noreferrer">Contribuir</a>
+          </div>
+          <div>
+            <h3>LibreLabs</h3>
+            <a href="https://github.com/LibreLabs502" target="_blank" rel="noopener noreferrer">GitHub de LibreLabs</a>
+            <a href="#libredrop-cloud">LibreDrop Cloud · Q100/mes</a>
+            <a href="#cloud">LibreLabs Cloud</a>
+            <a href="#open-source">Filosofía Open Source</a>
+          </div>
+        </nav>
+        <div class="footer-legal">
+          <span>© LibreLabs · Software, proyectos y herramientas libres.</span>
+          <span>Hecho en Guatemala</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
