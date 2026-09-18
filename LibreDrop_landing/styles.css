@@ -1296,3 +1296,39 @@ code {
     transition: none;
   }
 }
+/* ================= CONTACTO ================= */
+.strip-section {
+  padding: 72px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f2f9f7 100%);
+  border-top: 1px solid #e7efed;
+  border-bottom: 1px solid #e7efed;
+}
+
+.contact-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-inner h2 {
+  margin: 8px 0 12px;
+}
+
+.contact-lede {
+  max-width: 520px;
+  margin: 0 auto 28px;
+  color: var(--muted);
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
