@@ -317,9 +317,9 @@ code {
 }
 
 .brand-mark {
-  height: 30px;
+  height: 40px;
   width: auto;
-  border-radius: 8px;
+  border-radius: 10px;
   object-fit: contain;
   background: #fff;
   padding: 3px;
@@ -443,19 +443,22 @@ code {
 }
 
 .browser {
-  border-radius: 14px;
+  position: relative;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: var(--shadow-m);
-  border: 1px solid var(--border);
   background: #fff;
+  border: 1px solid var(--border);
+  box-shadow:
+    var(--shadow-m),
+    0 24px 48px -24px rgba(8, 51, 68, 0.28);
 }
 
 .browser-bar {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 11px 14px;
-  background: #fbfdfc;
+  padding: 12px 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f1f6f5 100%);
   border-bottom: 1px solid var(--border);
 }
 
@@ -476,35 +479,58 @@ code {
 .traffic i:nth-child(3) { background: #28c840; }
 
 .url {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   font-size: 0.78rem;
   color: var(--muted);
   background: #fff;
   border: 1px solid var(--border);
-  border-radius: 7px;
-  padding: 4px 12px;
+  border-radius: 999px;
+  padding: 5px 14px;
   flex: 1;
-  text-align: center;
   font-weight: 500;
 }
 
+.url svg {
+  color: var(--teal-500);
+  flex-shrink: 0;
+}
+
 .browser img {
+  display: block;
   width: 100%;
   height: auto;
 }
 
-.hero-float {
-  position: absolute;
-  left: -30px;
-  bottom: 26px;
+.browser-caption {
   display: flex;
   align-items: center;
-  gap: 12px;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
+  justify-content: center;
+  gap: 10px;
+  margin: 14px auto 0;
+  width: fit-content;
+  max-width: 100%;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 12px 16px;
-  box-shadow: var(--shadow-m);
+  border-radius: 12px;
+  padding: 8px 14px;
+  box-shadow: var(--shadow-s);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.browser-caption .cloud-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  flex-shrink: 0;
+}
+
+.browser-caption b {
+  color: var(--ink);
 }
 
 .cloud-icon {
@@ -515,16 +541,6 @@ code {
   border-radius: 12px;
   background: linear-gradient(135deg, var(--cyan-600), var(--cyan-700));
   color: #fff;
-}
-
-.float-card b {
-  display: block;
-  font-size: 0.9rem;
-}
-
-.float-card span {
-  font-size: 0.8rem;
-  color: var(--muted);
 }
 
 .hero-strip {
@@ -1087,6 +1103,14 @@ code {
   gap: 14px;
 }
 
+.cta-inner .cta-note {
+  margin: 18px auto 0;
+  max-width: 560px;
+  font-size: 0.9rem;
+  color: #99f6ff;
+  opacity: 0.9;
+}
+
 .cta-inner .btn-soft {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
@@ -1184,11 +1208,6 @@ code {
     gap: 40px;
   }
 
-  .hero-float {
-    left: 12px;
-    bottom: 14px;
-  }
-
   .plans {
     grid-template-columns: 1fr;
     max-width: 560px;
@@ -1248,12 +1267,6 @@ code {
 
   .hero {
     padding: 64px 0 48px;
-  }
-
-  .hero-float {
-    position: static;
-    margin-top: 16px;
-    justify-content: flex-start;
   }
 
   .cloud-price {

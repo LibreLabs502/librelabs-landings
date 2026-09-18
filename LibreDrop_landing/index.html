@@ -61,7 +61,7 @@
     <header class="nav" id="nav">
       <nav class="nav-inner" aria-label="Principal">
         <a class="brand" href="#inicio" aria-label="LibreDrop, inicio">
-          <img class="brand-mark" src="images/favicon.png" alt="" width="30" height="30" />
+          <img class="brand-mark" src="images/favicon.png" alt="" width="40" height="40" />
           <span class="brand-name">LibreDrop</span>
         </a>
         <button
@@ -79,7 +79,7 @@
           <a href="#planes">Planes</a>
           <a href="#open-source">Open Source</a>
           <a href="#faq">Preguntas</a>
-          <a href="https://github.com/LibreLabs502" target="_blank" rel="noopener noreferrer">LibreLabs</a>
+          <a href="https://librelabs.vercel.app/" target="_blank" rel="noopener noreferrer">LibreLabs</a>
           <a class="btn btn-ghost" href="https://github.com/LibreLabs502/LibreDrop" target="_blank" rel="noopener noreferrer">
             Ver código
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>
@@ -122,7 +122,10 @@
             <div class="browser">
               <div class="browser-bar">
                 <span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span>
-                <span class="url">mitienda.libredrop.com</span>
+                <span class="url">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+                  mitienda.libredrop.com
+                </span>
               </div>
               <img
                 src="images/libredrop_cloud.jpg"
@@ -133,15 +136,12 @@
                 fetchpriority="high"
               />
             </div>
-            <div class="hero-float" aria-hidden="true">
+            <p class="browser-caption">
               <span class="cloud-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
               </span>
-              <div class="float-card">
-                <b>LibreDrop Cloud</b>
-                <span>Listo para usar · Q100/mes</span>
-              </div>
-            </div>
+              <span><b>LibreDrop Cloud</b> · Listo para usar · Q100/mes</span>
+            </p>
           </div>
         </div>
         <div class="hero-strip" aria-hidden="true"></div>
@@ -271,8 +271,20 @@
                 <span class="cloud-price-amount">Q100<small>/mes</small></span>
                 <span class="cloud-price-label">Un único precio. Servicio de LibreLabs.</span>
               </div>
-              <!-- BOTÓN EMPEZAR: reemplazá href="#" por el enlace de creación de cuenta de LibreDrop Cloud -->
-              <a class="btn btn-primary btn-cloud-cta" href="#">Empezar</a>
+              <!-- Empezar abre WhatsApp con un mensaje listo; LibreLabs responde con el número de cuenta para el depósito y luego los pasos para crear el perfil. -->
+              <a
+                class="btn btn-primary btn-cloud-cta"
+                href="https://wa.me/50241934676?text=Hola%2C%20me%20gustar%C3%ADa%20empezar%20con%20LibreDrop"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Empezar
+              </a>
+              <p class="cloud-note">
+                <b>Así es el proceso:</b> tocás «Empezar», se abre WhatsApp con tu mensaje
+                listo, te respondemos con el número de cuenta para el depósito de Q100/mes y,
+                al confirmar el pago, te enviamos los pasos para crear tu perfil y tu tienda.
+              </p>
               <p class="cloud-note">
                 Los detalles operativos del servicio (límites, almacenamiento, soporte)
                 serán definidos y publicados oficialmente por LibreLabs.
@@ -346,8 +358,19 @@
                 <span class="plan-amount">Q100</span>
                 <span class="plan-period">por mes · servicio administrado</span>
               </div>
-              <!-- BOTÓN EMPEZAR: reemplazá href="#" por el enlace de creación de cuenta de LibreDrop Cloud -->
-              <a class="btn btn-light btn-block" href="#">Empezar con Cloud</a>
+              <a
+                class="btn btn-light btn-block"
+                href="https://wa.me/50241934676?text=Hola%2C%20me%20gustar%C3%ADa%20empezar%20con%20LibreDrop"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Empezar con Cloud
+              </a>
+              <p class="plan-note">
+                Al tocar «Empezar con Cloud» se abre WhatsApp: te confirmamos el número de
+                cuenta para el depósito de Q100/mes y, al pagar, te enviamos los pasos para
+                crear tu perfil.
+              </p>
               <p class="plan-note">
                 Pensado para quien quiere vender sin ocuparse de la tecnología.
               </p>
@@ -593,12 +616,23 @@
             y tené el control total, gratis.
           </p>
           <div class="hero-actions">
-            <!-- BOTÓN EMPEZAR: reemplazá href="#" por el enlace de creación de cuenta de LibreDrop Cloud -->
-            <a class="btn btn-primary" href="#">Empezar con LibreDrop Cloud</a>
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/50241934676?text=Hola%2C%20me%20gustar%C3%ADa%20empezar%20con%20LibreDrop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Empezar con LibreDrop Cloud
+            </a>
             <a class="btn btn-soft" href="https://github.com/LibreLabs502/LibreDrop" target="_blank" rel="noopener noreferrer">
               Ver código en GitHub
             </a>
           </div>
+          <p class="cta-note">
+            «Empezar» abre WhatsApp con tu mensaje listo: te pasamos el número de cuenta
+            para el depósito de Q100/mes y, al confirmar el pago, te creamos tu perfil y
+            tu tienda.
+          </p>
         </div>
       </section>
     </main>
@@ -619,6 +653,7 @@
           </div>
           <div>
             <h3>LibreLabs</h3>
+            <a href="https://librelabs.vercel.app/" target="_blank" rel="noopener noreferrer">Sitio de LibreLabs</a>
             <a href="https://github.com/LibreLabs502" target="_blank" rel="noopener noreferrer">GitHub de LibreLabs</a>
             <a href="#cloud">LibreDrop Cloud · Q100/mes</a>
             <a href="#planes">Planes</a>

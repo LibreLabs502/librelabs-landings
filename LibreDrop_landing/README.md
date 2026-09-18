@@ -64,9 +64,14 @@ servicio (límites, almacenamiento, soporte) serán publicados oficialmente por 
 
 ## Botón "Empezar"
 
-Los botones **"Empezar"** (en la sección Cloud, la tarjeta de Cloud y el CTA final) usan
-`href="#"` con un comentario en el HTML indicando dónde reemplazar el enlace real de
-creación de cuenta.
+Los botones **"Empezar"** (en la sección Cloud, la tarjeta de Cloud y el CTA final) abren
+WhatsApp (número `+502 4193 4676`) con un mensaje prellenado:
+
+> Hola, me gustaría empezar con LibreDrop
+
+Flujo previsto: el visitante envía el mensaje → LibreLabs responde con el número de cuenta
+para el depósito de Q100/mes → al confirmar el pago se le envían los pasos para crear su
+perfil y su tienda. La landing anuncia este proceso junto a cada botón.
 
 ## SEO pendiente
 
