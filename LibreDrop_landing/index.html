@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibreDrop — Tu tienda online simple, Open Source y con Cloud por Q100/mes</title>
+    <meta
+      name="description"
+      content="LibreDrop es una plataforma Open Source para crear tiendas online simples: publicá tus productos y recibí pedidos por WhatsApp, sin comisiones. LibreDrop Cloud lo deja todo listo por Q100/mes."
+    />
+    <meta name="theme-color" content="#0f766e" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LibreDrop" />
+    <meta property="og:title" content="LibreDrop — Tu tienda online simple, Open Source y con Cloud por Q100/mes" />
+    <meta
+      property="og:description"
+      content="Publicá tus productos y recibí pedidos por WhatsApp, sin comisiones. Usá LibreDrop Open Source o dejalo listo con LibreDrop Cloud por Q100/mes."
+    />
+    <meta property="og:image" content="images/libredrop_cloud.jpg" />
+    <meta property="og:image:width" content="1407" />
+    <meta property="og:image:height" content="768" />
+    <meta property="og:locale" content="es_GT" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LibreDrop — Tu tienda online simple, Open Source y con Cloud por Q100/mes" />
+    <meta
+      name="twitter:description"
+      content="Publicá tus productos y recibí pedidos por WhatsApp, sin comisiones. LibreDrop Open Source o LibreDrop Cloud por Q100/mes."
+    />
+    <meta name="twitter:image" content="images/libredrop_cloud.jpg" />
+
+    <!-- Favicon (images/favicon.png, 500x500) -->
+    <link rel="icon" type="image/png" sizes="500x500" href="images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+
+    <!--
+      Canonical: cuando conozcas el dominio de producción de esta landing,
+      añade aquí el <link rel="canonical" href="https://TUDOMINIO/..." /> correspondiente.
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <noscript>
+      <style>.reveal { opacity: 1 !important; transform: none !important; }</style>
+    </noscript>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="nav" id="nav">
+      <nav class="nav-inner" aria-label="Principal">
+        <a class="brand" href="#inicio" aria-label="LibreDrop, inicio">
+          <img class="brand-mark" src="images/favicon.png" alt="" width="30" height="30" />
+          <span class="brand-name">LibreDrop</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Abrir menú de navegación"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="menu">
+          <a href="#libredrop">LibreDrop</a>
+          <a href="#cloud">LibreDrop Cloud</a>
+          <a href="#planes">Planes</a>
+          <a href="#open-source">Open Source</a>
+          <a href="#faq">Preguntas</a>
+          <a href="https://github.com/LibreLabs502" target="_blank" rel="noopener noreferrer">LibreLabs</a>
+          <a class="btn btn-ghost" href="https://github.com/LibreLabs502/LibreDrop" target="_blank" rel="noopener noreferrer">
+            Ver código
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <!-- ================= HERO ================= -->
+      <section class="hero" id="inicio">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="wrap hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">
+              <span class="dot" aria-hidden="true"></span>
+              Familia LibreDrop · Open Source · Hecho en Guatemala
+            </p>
+            <h1>
+              Tu tienda online, simple.
+              <span class="line">Y con Cloud, lista para vender por <em>Q100/mes</em>.</span>
+            </h1>
+            <p class="lede">
+              LibreDrop te da la plataforma para publicar tus productos y recibir pedidos
+              por WhatsApp, sin intermediarios ni comisiones. Elegís cómo usarla:
+              autoalojás el proyecto Open Source, o dejás que <b>LibreDrop Cloud</b> la
+              monte y la mantenga por vos.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#planes">Ver planes y precios</a>
+              <a class="btn btn-soft" href="#libredrop">Qué es LibreDrop</a>
+            </div>
+            <p class="hero-note">
+              Backend de v1 terminado · Multi-tenant · Catálogo de categorías y productos ·
+              Pedidos por WhatsApp
+            </p>
+          </div>
+
+          <div class="hero-visual reveal reveal-delay">
+            <div class="browser">
+              <div class="browser-bar">
+                <span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="url">mitienda.libredrop.com</span>
+              </div>
+              <img
+                src="images/libredrop_cloud.jpg"
+                alt="Tienda online con LibreDrop mostrando su catálogo de productos"
+                width="1407"
+                height="768"
+                loading="eager"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="hero-float" aria-hidden="true">
+              <span class="cloud-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+              </span>
+              <div class="float-card">
+                <b>LibreDrop Cloud</b>
+                <span>Listo para usar · Q100/mes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-strip" aria-hidden="true"></div>
+      </section>
+
+      <!-- ================= ¿QUÉ ES LIBREDROP? ================= -->
+      <section class="section" id="libredrop">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="kicker">LibreDrop</p>
+            <h2>Una plataforma Open Source para crear tiendas online simples</h2>
+            <p class="section-sub">
+              Proyecto Open Source (AGPLv3), hecho en Guatemala, con un objetivo claro:
+              que vender online sea simple y sin comisiones.
+            </p>
+          </div>
+          <div class="split split-flip">
+            <div class="reveal">
+              <ul class="feat-list">
+                <li>
+                  <b>Registro en un solo paso.</b> Al crear tu usuario se genera tu tienda,
+                  su esquema de base de datos y su dominio en una sola transacción.
+                </li>
+                <li>
+                  <b>Catálogo de categorías y productos.</b> CRUD completo por tienda:
+                  nombre, descripción, precio e imagen. Backend de v1 terminado.
+                </li>
+                <li>
+                  <b>Pedidos por WhatsApp.</b> Tus clientes escriben directo al número de
+                  tu tienda. Sin pasarelas de pago ni comisiones por venta.
+                </li>
+                <li>
+                  <b>Multi-tenant.</b> Cada tienda es un tenant con esquema propio en
+                  PostgreSQL: tus datos quedan aislados de los demás.
+                </li>
+                <li>
+                  <b>API REST con JWT.</b> Autenticación segura; el catálogo es público y
+                  la administración, privada.
+                </li>
+              </ul>
+              <p class="honesty-note reveal">
+                Estado real del proyecto: backend de v1 terminado. Clientes, pedidos y
+                seguimiento de pagos se están desarrollando para futuras versiones; en el
+                MVP el cobro se gestiona por fuera de la plataforma, vía WhatsApp.
+              </p>
+            </div>
+            <div class="browser reveal reveal-delay">
+              <div class="browser-bar">
+                <span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="url">tu-tienda.libredrop.localhost</span>
+              </div>
+              <img
+                src="images/libredrop.jpg"
+                alt="Tienda creada con LibreDrop mostrando su catálogo de productos"
+                width="1407"
+                height="768"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= LIBREDROP CLOUD ================= -->
+      <section class="section cloud-section" id="cloud">
+        <div class="cloud-bg" aria-hidden="true"></div>
+        <div class="wrap">
+          <div class="cloud-grid">
+            <div class="cloud-copy reveal">
+              <p class="kicker kicker-light">
+                <span class="cloud-mini" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+                </span>
+                LibreDrop Cloud
+              </p>
+              <h2>El mismo LibreDrop, administrado por LibreLabs.</h2>
+              <p class="cloud-lede">
+                No querés encargarte del servidor, la instalación ni el mantenimiento.
+                LibreDrop Cloud es el mismo software LibreDrop, ya montado y mantenido por
+                el equipo de LibreLabs, con un único precio: <b>Q100/mes</b>.
+              </p>
+              <ul class="cloud-benefits">
+                <li>
+                  <span class="check" aria-hidden="true">✓</span>
+                  <span><b>Infraestructura administrada.</b> No te preocupás por el servidor.</span>
+                </li>
+                <li>
+                  <span class="check" aria-hidden="true">✓</span>
+                  <span><b>Instalación y mantenimiento</b> a cargo de LibreLabs.</span>
+                </li>
+                <li>
+                  <span class="check" aria-hidden="true">✓</span>
+                  <span><b>Mismo software Open Source</b>: AGPLv3, podés estudiarlo y modificarlo.</span>
+                </li>
+                <li>
+                  <span class="check" aria-hidden="true">✓</span>
+                  <span><b>Listo para vender.</b> Definís tu catálogo y recibís pedidos por WhatsApp.</span>
+                </li>
+              </ul>
+              <div class="cloud-price">
+                <span class="cloud-price-amount">Q100<small>/mes</small></span>
+                <span class="cloud-price-label">Un único precio. Servicio de LibreLabs.</span>
+              </div>
+              <!-- BOTÓN EMPEZAR: reemplazá href="#" por el enlace de creación de cuenta de LibreDrop Cloud -->
+              <a class="btn btn-primary btn-cloud-cta" href="#">Empezar</a>
+              <p class="cloud-note">
+                Los detalles operativos del servicio (límites, almacenamiento, soporte)
+                serán definidos y publicados oficialmente por LibreLabs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PLANES (TARJETAS) ================= -->
+      <section class="section" id="planes">
+        <div class="wrap">
+          <div class="section-head center reveal">
+            <p class="kicker">Planes</p>
+            <h2>Dos formas de usar el mismo LibreDrop</h2>
+            <p class="section-sub">
+              Elegí la que mejor se adapta a tu realidad. Son el mismo software: cambia
+              quién se encarga de la infraestructura.
+            </p>
+          </div>
+
+          <div class="plans">
+            <!-- Card LibreDrop Open Source -->
+            <article class="plan-card reveal">
+              <div class="plan-head">
+                <span class="tag">Proyecto Open Source</span>
+                <h3>LibreDrop</h3>
+                <p class="plan-lede">
+                  La plataforma Open Source, lista para que la uses y administres por tu cuenta.
+                </p>
+              </div>
+              <ul class="plan-list">
+                <li>Sin comisiones por venta ni pasarelas obligatorias.</li>
+                <li>Pedidos directo por WhatsApp al número de tu tienda.</li>
+                <li>Catálogo de categorías y productos por tienda (v1 terminada).</li>
+                <li>Multi-tenant: esquema propio por tienda en PostgreSQL.</li>
+                <li>Self-hosting: la ejecutás donde quieras.</li>
+                <li>Control total del código y de tus datos (AGPLv3).</li>
+              </ul>
+              <div class="plan-price">
+                <span class="plan-amount">Gratis<small>*</small></span>
+                <span class="plan-period">el software es libre</span>
+              </div>
+              <a class="btn btn-soft btn-block" href="https://github.com/LibreLabs502/LibreDrop" target="_blank" rel="noopener noreferrer">
+                Ver código en GitHub
+              </a>
+              <p class="plan-note">
+                * Al autoalojar, la infraestructura y su mantenimiento corren por tu cuenta.
+              </p>
+            </article>
+
+            <!-- Card LibreDrop Cloud (destacada) -->
+            <article class="plan-card plan-card-cloud reveal reveal-delay">
+              <div class="plan-badge" aria-hidden="true">Recomendado para vender ya</div>
+              <div class="plan-head">
+                <span class="tag tag-cloud">Servicio de LibreLabs</span>
+                <h3>LibreDrop Cloud</h3>
+                <p class="plan-lede">
+                  El mismo LibreDrop, ya montado y mantenido por LibreLabs. Listo para vender.
+                </p>
+              </div>
+              <ul class="plan-list">
+                <li>Todo lo que incluye LibreDrop: catálogo y pedidos por WhatsApp.</li>
+                <li>Infraestructura administrada: no te encargás del servidor.</li>
+                <li>Instalación y mantenimiento a cargo de LibreLabs.</li>
+                <li>Mismo software Open Source (AGPLv3).</li>
+                <li>Un único precio, sin sorpresas ni planes complicados.</li>
+                <li>LibreLabs publicará los detalles operativos del servicio.</li>
+              </ul>
+              <div class="plan-price plan-price-cloud">
+                <span class="plan-amount">Q100</span>
+                <span class="plan-period">por mes · servicio administrado</span>
+              </div>
+              <!-- BOTÓN EMPEZAR: reemplazá href="#" por el enlace de creación de cuenta de LibreDrop Cloud -->
+              <a class="btn btn-light btn-block" href="#">Empezar con Cloud</a>
+              <p class="plan-note">
+                Pensado para quien quiere vender sin ocuparse de la tecnología.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= OPEN SOURCE ================= -->
+      <section class="section section-dark" id="open-source">
+        <div class="wrap split">
+          <div class="reveal">
+            <p class="kicker kicker-light">Open Source</p>
+            <h2>Hecho para ser libre.</h2>
+            <p class="section-sub dark-sub">
+              LibreDrop es Open Source: el software está abierto para que puedas
+              estudiarlo, modificarlo y ejecutarlo bajo los términos de su licencia.
+            </p>
+            <ul class="freedoms">
+              <li>
+                <span class="freedom-mark" aria-hidden="true">✓</span>
+                <span><b>Transparencia.</b> Cualquiera puede ver qué hace el código y cómo
+                se manejan tus datos.</span>
+              </li>
+              <li>
+                <span class="freedom-mark" aria-hidden="true">✓</span>
+                <span><b>Libertad de estudio y modificación.</b> Podés leerlo, adaptarlo y
+                mejorarlo.</span>
+              </li>
+              <li>
+                <span class="freedom-mark" aria-hidden="true">✓</span>
+                <span><b>Self-hosting.</b> Podés ejecutar LibreDrop en tu propia
+                infraestructura.</span>
+              </li>
+              <li>
+                <span class="freedom-mark" aria-hidden="true">✓</span>
+                <span><b>Control sobre tus datos.</b> No se quedan encerrados en un
+                sistema de un proveedor propietario.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="reveal reveal-delay">
+            <div class="license-card">
+              <div class="license-top">
+                <span class="license-badge" aria-hidden="true">AGPLv3</span>
+                <span class="license-name">Licencia GNU AGPL v3</span>
+              </div>
+              <p>
+                LibreDrop se publica bajo la <b>GNU Affero General Public License v3</b>.
+                En términos simples:
+              </p>
+              <ul>
+                <li>Podés usarla, estudiarla y modificarla libremente.</li>
+                <li>
+                  Si distribuís el software o lo ofrecés como servicio, el código —
+                  incluidas tus modificaciones — debe seguir disponible (copyleft).
+                </li>
+                <li>Lo que es libre, se mantiene libre.</li>
+              </ul>
+              <a class="btn btn-primary" href="https://github.com/LibreLabs502/LibreDrop/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
+                Leer la licencia
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="wrap cta-band">
+          <p class="cta-band-text reveal">
+            Esto es importante para tu negocio: <b>no dependés obligatoriamente de un
+            proveedor</b>. Si no te gusta cómo evoluciona el servicio, el código es tuyo.
+          </p>
+          <a class="btn btn-primary reveal reveal-delay" href="https://github.com/LibreLabs502/LibreDrop" target="_blank" rel="noopener noreferrer">
+            Ver código en GitHub
+          </a>
+        </div>
+      </section>
+
+      <!-- ================= TECNOLOGÍA ================= -->
+      <section class="section tech" id="tecnologia">
+        <div class="wrap">
+          <div class="tech-copy reveal">
+            <p class="kicker">Tecnología</p>
+            <h2>Pensada para gente común, construida con herramientas serias.</h2>
+            <p class="section-sub">
+              LibreDrop no es una landing prometedora: su backend corre sobre un stack
+              probado y abierto.
+            </p>
+            <a class="link-arrow" href="https://github.com/LibreLabs502/LibreDrop/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+              Ver README técnico del proyecto
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <ul class="tech-chips reveal reveal-delay" aria-label="Stack de tecnología">
+            <li>Python 3.12+</li>
+            <li>Django 6</li>
+            <li>Django REST Framework</li>
+            <li>PostgreSQL</li>
+            <li>django-tenants</li>
+            <li>Cloudinary</li>
+            <li>JWT</li>
+            <li>API REST</li>
+            <li>React</li>
+            <li>Vite</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= COMUNIDAD ================= -->
+      <section class="section section-tint" id="comunidad">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="kicker">Comunidad</p>
+            <h2>LibreDrop puede crecer con vos</h2>
+            <p class="section-sub">
+              El backend de v1 está terminado. Clientes, pedidos y seguimiento de pagos son
+              los siguientes pasos del roadmap: hay lugar para tu contribución.
+            </p>
+          </div>
+          <ol class="contribute reveal">
+            <li class="contribute-step">
+              <b>1</b>
+              <div>
+                <h3>Hacé un fork</h3>
+                <p>Cloná el repositorio y prepará tu entorno local de desarrollo.</p>
+              </div>
+            </li>
+            <li class="contribute-step reveal-delay">
+              <b>2</b>
+              <div>
+                <h3>Creá una rama descriptiva</h3>
+                <p><code>feature/nueva-funcionalidad</code> o <code>fix/correccion</code>.</p>
+              </div>
+            </li>
+            <li class="contribute-step">
+              <b>3</b>
+              <div>
+                <h3>Cambios + tests</h3>
+                <p>Segí el estilo del proyecto y sumá tests con <code>python manage.py test</code>.</p>
+              </div>
+            </li>
+            <li class="contribute-step reveal-delay">
+              <b>4</b>
+              <div>
+                <h3>Abrí un pull request</h3>
+                <p>Describí los cambios y su motivación. Eso es todo.</p>
+              </div>
+            </li>
+          </ol>
+          <div class="community-actions reveal">
+            <a class="btn btn-primary" href="https://github.com/LibreLabs502/LibreDrop/issues" target="_blank" rel="noopener noreferrer">
+              Reportar un error o proponer una idea
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/LibreLabs502/LibreDrop/blob/main/docs/CONTRIB.md" target="_blank" rel="noopener noreferrer">
+              Guía para contribuir (CONTRIB.md)
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FAQ ================= -->
+      <section class="section" id="faq">
+        <div class="wrap faq-wrap">
+          <div class="section-head center reveal">
+            <p class="kicker">Preguntas frecuentes</p>
+            <h2>Lo que querés saber antes de elegir</h2>
+          </div>
+          <div class="faq">
+            <details class="reveal">
+              <summary>¿Qué es LibreDrop?</summary>
+              <p>
+                Una plataforma Open Source (AGPLv3) para crear tiendas online simples:
+                publicás tus productos y recibís pedidos por WhatsApp, sin comisiones ni
+                intermediarios. Está hecha en Guatemala por LibreLabs.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>¿Qué es LibreDrop Cloud?</summary>
+              <p>
+                El mismo software LibreDrop, administrado por LibreLabs: instalación,
+                infraestructura y mantenimiento a cargo del equipo, por un único precio de
+                Q100/mes. Solo definís tu catálogo y empezás a recibir pedidos.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>¿Cuál es la diferencia entre LibreDrop y LibreDrop Cloud?</summary>
+              <p>
+                Es el mismo software. Con LibreDrop (Open Source) autoalojás y administrás
+                todo vos. Con LibreDrop Cloud, LibreLabs se encarga de la infraestructura,
+                la instalación y el mantenimiento por Q100/mes.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>¿Y si no quiero pagar? ¿Es Gratis LibreDrop?</summary>
+              <p>
+                Sí. LibreDrop como software es gratuito y podés instalarlo vos mismo
+                (self-hosting). Con LibreDrop Cloud pagás el servicio administrado de
+                Q100/mes para no encargarte de la instalación, el servidor ni el
+                mantenimiento.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>¿Cómo recibo los pedidos?</summary>
+              <p>
+                Por WhatsApp, directo al número de tu tienda. Sin pasarelas de pago
+                obligatorias ni comisiones por venta. En el MVP el cobro se gestiona por
+                fuera de la plataforma, vía WhatsApp.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>¿Qué hay implementado hoy?</summary>
+              <p>
+                El backend de v1 está terminado: cuentas de usuario, tiendas multi-tenant y
+                catálogo de categorías y productos. Clientes, pedidos y seguimiento de
+                pagos son los siguientes pasos y se están desarrollando.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>¿LibreDrop Cloud funciona igual que LibreDrop?</summary>
+              <p>
+                Sí, es el mismo proyecto: pedidos por WhatsApp, catálogo por tienda y
+                mismos principios Open Source. La diferencia es quién se encarga de la
+                infraestructura.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>¿Puedo contribuir al proyecto?</summary>
+              <p>
+                Claro. Hacé un fork, creá una rama descriptiva, sumá tus cambios con tests
+                y abrí un pull request. La guía de contribución está en
+                <code>docs/CONTRIB.md</code> del repositorio.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CTA FINAL ================= -->
+      <section class="cta-final" id="cta">
+        <div class="wrap cta-inner reveal">
+          <h2>¿No querés administrar nada?</h2>
+          <p>
+            LibreDrop Cloud deja el trabajo pesado a LibreLabs: infraestructura,
+            instalación y mantenimiento por <b>Q100/mes</b>. O usá LibreDrop Open Source
+            y tené el control total, gratis.
+          </p>
+          <div class="hero-actions">
+            <!-- BOTÓN EMPEZAR: reemplazá href="#" por el enlace de creación de cuenta de LibreDrop Cloud -->
+            <a class="btn btn-primary" href="#">Empezar con LibreDrop Cloud</a>
+            <a class="btn btn-soft" href="https://github.com/LibreLabs502/LibreDrop" target="_blank" rel="noopener noreferrer">
+              Ver código en GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <div class="footer-brand">
+          <span class="brand-name">LibreDrop</span>
+          <p>Plataforma Open Source para crear tiendas online simples. Hecha en Guatemala por LibreLabs.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Enlaces del pie">
+          <div>
+            <h3>Proyecto</h3>
+            <a href="https://github.com/LibreLabs502/LibreDrop" target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a>
+            <a href="https://github.com/LibreLabs502/LibreDrop/blob/main/docs/VERSIONS.md" target="_blank" rel="noopener noreferrer">VERSIONS.md</a>
+            <a href="https://github.com/LibreLabs502/LibreDrop/blob/main/docs/DATABASE.md" target="_blank" rel="noopener noreferrer">Modelo de datos</a>
+            <a href="https://github.com/LibreLabs502/LibreDrop/blob/main/docs/CONTRIB.md" target="_blank" rel="noopener noreferrer">Contribuir</a>
+          </div>
+          <div>
+            <h3>LibreLabs</h3>
+            <a href="https://github.com/LibreLabs502" target="_blank" rel="noopener noreferrer">GitHub de LibreLabs</a>
+            <a href="#cloud">LibreDrop Cloud · Q100/mes</a>
+            <a href="#planes">Planes</a>
+          </div>
+        </nav>
+        <div class="footer-legal">
+          <span>© LibreLabs · LibreDrop se distribuye bajo AGPLv3.</span>
+          <span>Hecho en Guatemala</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
