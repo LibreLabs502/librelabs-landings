@@ -41,14 +41,14 @@ blanca, con acentos teal para LibreDrop y cian para LibreDrop Cloud.
 Todo el copy está verificado contra el repositorio oficial de LibreDrop:
 
 - Repositorio: <https://github.com/LibreLabs502/LibreDrop>
-- `README.md` — qué es, stack, apps, API, instalación.
-- `docs/VERSIONS.md` — estado actual (backend de v1 terminado; `customers` y `orders` en desarrollo).
-- `docs/DATABASE.md` — arquitectura multi-tenant (django-tenants) y modelo de datos.
-- `docs/CONTRIB.md` — guía de contribución.
+- `README.md` — qué es, stack, apps, API, instalación y producción.
+- `VERSIONS.md` — estado de cada versión del proyecto.
+- `docs/arquitectura.md` — multitenancy **lineal por `tenant_id`** (sin `django-tenants`
+  ni esquemas por tienda), apps del backend y despliegue.
+- `docs/api.md` — endpoints de la API (auth, tenants, catálogo, storefront, pagos).
 - `LICENSE` — GNU AGPL v3.
 
-No se inventaron funcionalidades: las que están en desarrollo (`customers`, `orders`,
-seguimiento de pagos) se presentan como tales.
+No se inventaron funcionalidades: lo que está en desarrollo se presenta como tal.
 
 ## Precio de LibreDrop Cloud
 

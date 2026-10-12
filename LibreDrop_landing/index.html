@@ -112,7 +112,7 @@
               <a class="btn btn-soft" href="#libredrop">Qué es LibreDrop</a>
             </div>
             <p class="hero-note">
-              Backend de v1 terminado · Multi-tenant · Catálogo de productos · Pedidos por WhatsApp
+              Panel + tienda pública · Multitenant por tenant_id · Catálogo · Pedidos por WhatsApp
             </p>
           </div>
 
@@ -160,31 +160,36 @@
             <div class="reveal">
               <ul class="feat-list">
                 <li>
-                  <b>Catálogo de categorías y productos.</b> CRUD completo por tienda: nombre,
-                  descripción, precio e imagen. Backend de v1 terminado.
+                  <b>Panel y tienda pública.</b> Administrás tus tiendas y tu catálogo desde el
+                  panel, y cada tienda se publica en <code>/tienda/&lt;slug&gt;</code>.
                 </li>
                 <li>
-                  <b>Pedidos por WhatsApp.</b> Tus clientes escriben directo al número de tu
-                  tienda. Sin pasarelas de pago ni comisiones por venta.
+                  <b>Catálogo de categorías y productos.</b> CRUD por tienda: nombre,
+                  descripción, precio e imagen.
                 </li>
                 <li>
-                  <b>Multi-tenant.</b> Cada tienda es un tenant con esquema propio en
-                  PostgreSQL: tus datos quedan aislados de los demás.
+                  <b>Pedidos por WhatsApp.</b> Al tocar un producto se abre WhatsApp con el
+                  mensaje listo. Sin pasarelas obligatorias ni comisiones por venta.
                 </li>
                 <li>
-                  <b>API REST con JWT y self-hosting.</b> Catálogo público, administración
-                  privada, y el control de los datos en tus manos.
+                  <b>Multitenant por <code>tenant_id</code>.</b> Mismas tablas para todos, cada
+                  registro con su tienda y el acceso filtrado por membresía. Sin esquemas por tienda.
+                </li>
+                <li>
+                  <b>Apariencia por tienda.</b> Paletas de color y enlaces a tus redes
+                  (Instagram, Facebook, TikTok y LinkedIn).
                 </li>
               </ul>
               <p class="honesty-note reveal">
-                Estado real: el backend de v1 está terminado. Clientes, pedidos y seguimiento de
-                pagos se están desarrollando; en el MVP el cobro se gestiona por fuera, vía WhatsApp.
+                Estado real: proyecto en desarrollo activo. Ya funcionan el registro, el panel,
+                el catálogo, la tienda pública, la apariencia y la activación del plan; los
+                pedidos se cierran por WhatsApp.
               </p>
             </div>
             <div class="browser reveal reveal-delay">
               <div class="browser-bar">
                 <span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span>
-                <span class="url">tu-tienda.libredrop.localhost</span>
+                <span class="url">libredrop-app.vercel.app/tienda/mi-tienda</span>
               </div>
               <img
                 src="images/libredrop.jpg"
@@ -236,8 +241,8 @@
               <h3 class="cloud-sub">Cómo funciona</h3>
               <ol class="cloud-steps">
                 <li>Tocás <b>«Empezar»</b> y entrás a la app de LibreDrop.</li>
-                <li>Creás tu perfil y tu tienda en unos minutos.</li>
-                <li>Definís tu catálogo y empezás a recibir pedidos por WhatsApp.</li>
+                <li>Creás tu cuenta: tu tienda se genera automáticamente al registrarte.</li>
+                <li>Activás tu plan de <b>Q100/mes</b> y cargás tu catálogo para empezar a vender.</li>
               </ol>
 
               <div class="cloud-price">
@@ -387,11 +392,11 @@
         </div>
         <div class="wrap cta-band">
           <p class="cta-band-text reveal">
-            El backend de v1 está terminado y hay lugar para tu contribución: <b>hacé un fork,
-            sumá tus cambios con tests y abrí un pull request</b>.
+            El proyecto está en desarrollo activo y hay lugar para tu contribución: <b>hacé un
+            fork, sumá tus cambios con tests y abrí un pull request</b>.
           </p>
-          <a class="btn btn-primary reveal reveal-delay" href="https://github.com/LibreLabs502/LibreDrop/blob/main/docs/CONTRIB.md" target="_blank" rel="noopener noreferrer">
-            Guía para contribuir
+          <a class="btn btn-primary reveal reveal-delay" href="https://github.com/LibreLabs502/LibreDrop" target="_blank" rel="noopener noreferrer">
+            Ver el repositorio
           </a>
         </div>
       </section>
@@ -409,15 +414,15 @@
           </div>
           <ul class="tech-chips reveal reveal-delay" aria-label="Stack de tecnología">
             <li>Python 3.12+</li>
-            <li>Django 6</li>
+            <li>Django 6.1</li>
             <li>Django REST Framework</li>
-            <li>PostgreSQL</li>
-            <li>django-tenants</li>
+            <li>SimpleJWT</li>
+            <li>PostgreSQL (Neon)</li>
             <li>Cloudinary</li>
-            <li>JWT</li>
-            <li>API REST</li>
-            <li>React</li>
+            <li>Gunicorn + WhiteNoise</li>
+            <li>React 18</li>
             <li>Vite</li>
+            <li>React Router</li>
           </ul>
         </div>
       </section>
@@ -465,9 +470,17 @@
             <details class="reveal">
               <summary>¿Cómo recibo los pedidos?</summary>
               <p>
-                Por WhatsApp, directo al número de tu tienda. Sin pasarelas de pago
-                obligatorias ni comisiones por venta. En el MVP el cobro se gestiona por
-                fuera de la plataforma, vía WhatsApp.
+                Por WhatsApp, directo al número de tu tienda: al tocar un producto se abre
+                WhatsApp con el mensaje y el producto listos. Sin pasarelas de pago
+                obligatorias ni comisiones por venta.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>¿Qué hay implementado hoy?</summary>
+              <p>
+                El registro, el panel de administración, el catálogo, la tienda pública
+                (<code>/tienda/&lt;slug&gt;</code>), las paletas de color y la activación del
+                plan. El proyecto sigue en desarrollo activo.
               </p>
             </details>
           </div>
@@ -514,8 +527,9 @@
           <div>
             <h3>Proyecto</h3>
             <a href="https://github.com/LibreLabs502/LibreDrop" target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a>
-            <a href="https://github.com/LibreLabs502/LibreDrop/blob/main/docs/VERSIONS.md" target="_blank" rel="noopener noreferrer">VERSIONS.md</a>
-            <a href="https://github.com/LibreLabs502/LibreDrop/blob/main/docs/CONTRIB.md" target="_blank" rel="noopener noreferrer">Contribuir</a>
+            <a href="https://github.com/LibreLabs502/LibreDrop/blob/main/VERSIONS.md" target="_blank" rel="noopener noreferrer">VERSIONS.md</a>
+            <a href="https://github.com/LibreLabs502/LibreDrop/blob/main/docs/arquitectura.md" target="_blank" rel="noopener noreferrer">Arquitectura</a>
+            <a href="https://github.com/LibreLabs502/LibreDrop/blob/main/docs/api.md" target="_blank" rel="noopener noreferrer">API</a>
           </div>
           <div>
             <h3>LibreLabs</h3>
