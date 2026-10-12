@@ -25,11 +25,11 @@ Una sola página que:
 
 - Presenta **LibreDrop**, la plataforma Open Source (AGPLv3) para crear tiendas online
   simples: pedidos por WhatsApp, sin comisiones, multi-tenant.
-- Vende **LibreDrop Cloud** como protagonista: el mismo software administrado por
-  LibreLabs por **Q100/mes** (infraestructura, instalación y mantenimiento a cargo del
-  equipo).
-- Incluye **tarjetas de planes** con beneficios y precios de ambos.
-- Cierra con Open Source, comunidad, preguntas frecuentes y un CTA hacia Cloud.
+- Explica **LibreDrop Cloud**: qué es, cómo funciona y qué resuelve, con un precio único
+  de **Q100/mes** (infraestructura, instalación y mantenimiento a cargo del equipo).
+- Incluye una **tabla comparativa** entre LibreDrop (Open Source, gratis) y
+  LibreDrop Cloud (servicio administrado).
+- Cierra con Open Source, tecnología, preguntas frecuentes y un CTA hacia Cloud.
 
 ## Estética
 
@@ -64,8 +64,8 @@ servicio (límites, almacenamiento, soporte) serán publicados oficialmente por 
 
 ## Botón "Empezar"
 
-Los botones **"Empezar"** (en la sección Cloud, la tarjeta de Cloud y el CTA final) abren
-WhatsApp (número `+502 4193 4676`) con un mensaje prellenado:
+Los botones **"Empezar"** (en la sección Cloud, en la comparación y en el CTA final)
+abren WhatsApp (número `+502 4193 4676`) con un mensaje prellenado:
 
 > Hola, me gustaría empezar con LibreDrop
 
