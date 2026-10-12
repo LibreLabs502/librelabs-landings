@@ -65,7 +65,7 @@ servicio (límites, almacenamiento, soporte) serán publicados oficialmente por 
 ## Botón "Empezar"
 
 Los botones **"Empezar"** (en la sección Cloud, en la comparación y en el CTA final)
-apuntan a la app de LibreDrop: <https://libredrop-app.vercel.app/>. Desde ahí el usuario
+apuntan a LibreDrop Cloud: <https://libredrop-cloud.vercel.app/>. Desde ahí el usuario
 crea su perfil y su tienda; el servicio administrado (LibreDrop Cloud) cuesta **Q100/mes**.
 
 ## SEO pendiente
