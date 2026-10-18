@@ -24,7 +24,10 @@ LibreDrop_landing/
 Una sola página que:
 
 - Presenta **LibreDrop**, la plataforma Open Source (AGPLv3) para crear tiendas online
-  simples: pedidos por WhatsApp, sin comisiones, multi-tenant.
+  simples: ventas por **WhatsApp y redes sociales** (Instagram, Facebook y TikTok), sin
+  comisiones, multi-tenant.
+- Explica que cada tienda **elige sus canales de compra**: WhatsApp («Comprar por») y
+  redes sociales («Preguntar por»).
 - Explica **LibreDrop Cloud**: qué es, cómo funciona y qué resuelve, con un precio único
   de **Q100/mes** (infraestructura, instalación y mantenimiento a cargo del equipo).
 - Incluye una **tabla comparativa** entre LibreDrop (Open Source, gratis) y
@@ -46,6 +49,8 @@ Todo el copy está verificado contra el repositorio oficial de LibreDrop:
 - `docs/arquitectura.md` — multitenancy **lineal por `tenant_id`** (sin `django-tenants`
   ni esquemas por tienda), apps del backend y despliegue.
 - `docs/api.md` — endpoints de la API (auth, tenants, catálogo, storefront, pagos).
+- `backend/tenants/channels.py` — canales de compra por tienda (WhatsApp, Instagram,
+  Facebook y TikTok; LinkedIn queda solo como enlace de contacto).
 - `LICENSE` — GNU AGPL v3.
 
 No se inventaron funcionalidades: lo que está en desarrollo se presenta como tal.
@@ -60,6 +65,7 @@ servicio (límites, almacenamiento, soporte) serán publicados oficialmente por 
 
 - ¿Qué es LibreDrop? Plataforma Open Source para tiendas online simples.
 - ¿Qué es LibreDrop Cloud? El mismo LibreDrop, administrado por LibreLabs, Q100/mes.
+- ¿Por dónde vendo? Por los canales que actives: WhatsApp e Instagram, Facebook o TikTok.
 - ¿Y si no quiero pagar? LibreDrop es gratuito; autoalojalo vos.
 
 ## Botón "Empezar"
