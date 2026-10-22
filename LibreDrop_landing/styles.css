@@ -1240,7 +1240,7 @@ code {
 }
 
 .pref-title {
-  margin: 0 0 16px;
+  margin: 0 0 18px;
   color: #e0f2fe;
   font-size: 1.02rem;
   font-weight: 800;
@@ -1258,54 +1258,50 @@ code {
   background: linear-gradient(90deg, rgba(110, 231, 255, 0.45), transparent);
 }
 
-.pref-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-}
-
 .pref-store {
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
-  gap: 14px;
-  padding: 10px 22px 10px 10px;
-  border-radius: 16px;
+  gap: 16px;
+  padding: 16px 16px 18px;
+  border-radius: 20px;
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(165, 243, 252, 0.2);
-  text-decoration: none;
   transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease,
     box-shadow 0.2s ease;
 }
 
-.pref-store:hover,
-.pref-store:focus-visible {
-  transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(110, 231, 255, 0.5);
-  box-shadow: 0 16px 30px -18px rgba(0, 0, 0, 0.7);
+.pref-store:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.11);
+  border-color: rgba(110, 231, 255, 0.45);
+  box-shadow: 0 24px 44px -24px rgba(0, 0, 0, 0.75);
 }
 
 .pref-store-logo {
-  width: 72px;
-  height: 72px;
-  border-radius: 12px;
+  width: 240px;
+  height: 240px;
+  border-radius: 14px;
   object-fit: contain;
   background: #fff;
-  box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 10px 24px -12px rgba(0, 0, 0, 0.6);
 }
 
 .pref-store-name {
   color: #fff;
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 1.05rem;
   letter-spacing: 0.01em;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(110, 231, 255, 0.55);
+  padding-bottom: 1px;
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-.pref-store:hover .pref-store-name,
-.pref-store:focus-visible .pref-store-name {
-  border-bottom-color: rgba(110, 231, 255, 0.7);
+.pref-store-name:hover,
+.pref-store-name:focus-visible {
+  color: #a5f3fc;
+  border-bottom-color: #a5f3fc;
 }
 
 @media (max-width: 720px) {
@@ -1315,6 +1311,11 @@ code {
 
   .pref-title::after {
     display: none;
+  }
+
+  .pref-store-logo {
+    width: 200px;
+    height: 200px;
   }
 }
 
