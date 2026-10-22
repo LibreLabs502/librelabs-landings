@@ -14,6 +14,7 @@ LibreDrop_landing/
 ├── logo.png / logo-mark.png   # logotipo y marca extraídos de las capturas oficiales
 ├── icon-32/64/180/512.png     # favicons derivados de images/libredrop_icon.jpg
 ├── images/                    # capturas oficiales + assets optimizados (héroes, OG)
+│   └── preferencias/          # logos de tiendas de ejemplo (Sunday Shop)
 ├── scripts/
 │   └── generar_assets.py      # regenera héroes, OG y favicons desde las originales
 └── README.md
@@ -32,6 +33,8 @@ Una sola página que:
   de **Q100/mes** (infraestructura, instalación y mantenimiento a cargo del equipo).
 - Incluye una **tabla comparativa** entre LibreDrop (Open Source, gratis) y
   LibreDrop Cloud (servicio administrado).
+- Muestra **tiendas de ejemplo** dentro de Cloud (Sunday Shop, que vende por Instagram y
+  Facebook), con enlace a la tienda real.
 - Cierra con Open Source, tecnología, preguntas frecuentes y un CTA hacia Cloud.
 
 ## Estética
