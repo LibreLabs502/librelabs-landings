@@ -891,6 +891,126 @@ code {
   margin: 24px 0 0;
 }
 
+/* ---------- desarrollo a medida ---------- */
+.services-label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--lab-600);
+  margin: 0 0 18px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.custom-panel {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 44px;
+  align-items: start;
+  margin-top: 44px;
+  padding: 42px 44px;
+  border-radius: calc(var(--radius) + 6px);
+  background: linear-gradient(135deg, var(--lab-950) 0%, var(--lab-900) 55%, var(--cyan-900) 100%);
+  color: #e6f4ef;
+  box-shadow: var(--shadow-m);
+}
+
+.custom-panel h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 12px 0;
+}
+
+.custom-panel p {
+  color: #cfe6df;
+}
+
+.custom-panel .custom-panel-note {
+  margin: 0 0 24px;
+  padding-left: 14px;
+  border-left: 3px solid rgba(95, 192, 170, 0.65);
+  color: #a9c9c0;
+  font-size: 0.9rem;
+}
+
+.tag-panel {
+  color: #d6fff0;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.btn-panel {
+  background: #fff;
+  color: var(--lab-800);
+  box-shadow: var(--shadow-s);
+}
+
+.btn-panel:hover {
+  background: var(--lab-100);
+  box-shadow: var(--shadow-m);
+}
+
+.custom-panel-side {
+  display: grid;
+  gap: 20px;
+  padding-left: 40px;
+  border-left: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.custom-panel .custom-panel-side-title {
+  margin: 0;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7dd3c8;
+}
+
+.panel-line {
+  display: grid;
+  gap: 4px;
+}
+
+.panel-line-tag {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8fb5ac;
+}
+
+.panel-line-name {
+  font-weight: 800;
+  color: #fff;
+}
+
+.panel-line a {
+  width: fit-content;
+  color: #9fe6d6;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.panel-line a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.custom-panel .panel-line p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #b9d4cc;
+}
+
+.panel-line-active .panel-line-name {
+  color: #7dd3c8;
+}
+
 /* ---------- LibreDrop Cloud ---------- */
 .cloud-section {
   position: relative;
@@ -1662,6 +1782,23 @@ a.map-child:hover {
   .lab-map {
     max-width: 560px;
   }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .custom-panel {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 34px;
+  }
+
+  .custom-panel-side {
+    padding-left: 0;
+    padding-top: 26px;
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+  }
 }
 
 @media (max-width: 720px) {
@@ -1776,6 +1913,14 @@ a.map-child:hover {
   .footer-inner {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-panel {
+    padding: 28px 22px;
   }
 }
 
