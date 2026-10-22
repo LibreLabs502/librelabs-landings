@@ -33,8 +33,8 @@ Una sola página que:
   de **Q100/mes** (infraestructura, instalación y mantenimiento a cargo del equipo).
 - Incluye una **tabla comparativa** entre LibreDrop (Open Source, gratis) y
   LibreDrop Cloud (servicio administrado).
-- Muestra **tiendas de ejemplo** dentro de Cloud (Sunday Shop, que vende por Instagram y
-  Facebook), con enlace a la tienda real.
+- Cierra el bloque de Cloud con **"Algunas de nuestras preferencias"**: el logo y el nombre
+  de Sunday Shop, enlazado a su tienda real.
 - Cierra con Open Source, tecnología, preguntas frecuentes y un CTA hacia Cloud.
 
 ## Estética

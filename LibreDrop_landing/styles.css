@@ -1233,93 +1233,88 @@ code {
 }
 
 /* ---------- tiendas de ejemplo dentro de Cloud ---------- */
-.cloud-showcase {
-  margin-top: 30px;
-  max-width: 620px;
+.pref-block {
+  margin-top: 34px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(165, 243, 252, 0.16);
 }
 
-.cloud-showcase-lede {
+.pref-title {
   margin: 0 0 16px;
-  color: #bbe4ee;
-  font-size: 0.98rem;
-}
-
-.store-card {
+  color: #e0f2fe;
+  font-size: 1.02rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
   display: flex;
   align-items: center;
-  gap: 18px;
-  padding: 18px;
-  border-radius: var(--radius);
-  background: #fff;
-  color: var(--ink);
-  box-shadow: 0 22px 48px -24px rgba(2, 20, 30, 0.65);
+  gap: 14px;
 }
 
-.store-card-logo {
-  flex: 0 0 auto;
-  width: 96px;
-  height: 96px;
-  object-fit: contain;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: #fff;
+.pref-title::after {
+  content: "";
+  flex: 1;
+  max-width: 220px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(110, 231, 255, 0.45), transparent);
 }
 
-.store-card-body {
-  min-width: 0;
-}
-
-.store-card-name {
-  margin: 0;
-  font-size: 1.15rem;
-  color: var(--ink);
-}
-
-.store-card-desc {
-  margin: 2px 0 10px;
-  color: var(--muted);
-  font-size: 0.92rem;
-}
-
-.store-channels {
-  list-style: none;
+.pref-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin: 0 0 12px;
-  padding: 0;
+  gap: 14px;
 }
 
-.store-channels li {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 4px 9px;
-  border-radius: 999px;
-  color: var(--cyan-800);
-  background: var(--cyan-100);
-}
-
-.store-card-link {
+.pref-store {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  font-weight: 800;
-  font-size: 0.92rem;
-  color: var(--teal-700);
+  gap: 14px;
+  padding: 10px 22px 10px 10px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(165, 243, 252, 0.2);
   text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.store-card-link:hover {
-  text-decoration: underline;
+.pref-store:hover,
+.pref-store:focus-visible {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(110, 231, 255, 0.5);
+  box-shadow: 0 16px 30px -18px rgba(0, 0, 0, 0.7);
+}
+
+.pref-store-logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: #fff;
+  box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.55);
+}
+
+.pref-store-name {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.pref-store:hover .pref-store-name,
+.pref-store:focus-visible .pref-store-name {
+  border-bottom-color: rgba(110, 231, 255, 0.7);
 }
 
 @media (max-width: 720px) {
-  .store-card {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
+  .pref-block {
+    margin-top: 28px;
+  }
+
+  .pref-title::after {
+    display: none;
   }
 }
 
